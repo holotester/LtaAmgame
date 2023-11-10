@@ -142,7 +142,7 @@ public class Readxml : MonoBehaviour
         pop = GetComponent<PopupManager>();
         animator = GetComponent<Animator>();
         gc = GetComponent<GC>();
-        StartCoroutine(ReadXML("https://raw.githubusercontent.com/20145050-Vernon-Ong/Active-Mobility-Game/main/Xml/popupNotifi.xml"));
+        StartCoroutine(ReadXML("https://raw.githubusercontent.com/holotester/LtaAmgame/main/Xml/popupNotifi.xml?token=GHSAT0AAAAAACJZW667C27CNQVB3A7GI7KCZKN4WOQ"));
     }
     
 
