@@ -14,6 +14,7 @@ public class GC : MonoBehaviour
     // private Vector2 initialPosition;
 
     public int totalpoints;
+    public int newtotalPoints;
     public float maxDistanceBeforeDamage = 1f;
 
     // public GameObject Phone;
@@ -157,6 +158,7 @@ public class GC : MonoBehaviour
             Destroy(other.gameObject);
             // gcmenu.PlayCoin();
             totalpoints++;
+            newtotalPoints++;
             ValueText.text = totalpoints.ToString();
             AddPoints(1);
             // Debug.Log("hello my name"+totalpoints);

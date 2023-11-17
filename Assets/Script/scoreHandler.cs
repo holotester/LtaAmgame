@@ -46,6 +46,9 @@ public class scoreHandler : MonoBehaviour
     void Awake()
     {
         //target text mesh
+        int totalPoints = PlayerPrefs.GetInt("NewTotalPoints", 0);
+        TotalPointsText.text = ": " + totalPoints.ToString();
+        
         learningPoint1Text = learningPoint1.GetComponent<TextMeshProUGUI>();
         learningPoint2Text = learningPoint2.GetComponent<TextMeshProUGUI>();
         learningPoint3Text = learningPoint3.GetComponent<TextMeshProUGUI>();
